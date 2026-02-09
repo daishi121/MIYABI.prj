@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MIYABI</title> <!-- CHANGE_BRAND_NAME -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        LIVRAISON GRATUITE +300 DH <!-- CHANGE_FREE_SHIPPING_AMOUNT -->
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MIYABI</a> <!-- CHANGE_BRAND_NAME -->
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Cart Icon -->
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-symbol">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a>
+                <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <h1 class="page-title">Contactez-nous</h1>
+        <p class="page-description">Nous sommes là pour répondre à toutes vos questions</p>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <h2>Nos Coordonnées</h2>
+                
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-details">
+                        <h3>Adresse</h3>
+                        <p>CHANGE_STORE_ADDRESS</p> <!-- CHANGE_STORE_ADDRESS -->
+                        <p>CHANGE_CITY, CHANGE_POSTAL_CODE</p> <!-- CHANGE_CITY and CHANGE_POSTAL_CODE -->
+                        <p>CHANGE_COUNTRY</p> <!-- CHANGE_COUNTRY -->
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📞</div>
+                    <div class="info-details">
+                        <h3>Téléphone</h3>
+                        <p><a href="tel:CHANGE_PHONE_NUMBER">CHANGE_PHONE_NUMBER</a></p> <!-- CHANGE_PHONE_NUMBER -->
+                        <p class="info-note">Lun - Sam: 9h00 - 18h00</p> <!-- CHANGE_BUSINESS_HOURS -->
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">📧</div>
+                    <div class="info-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:CHANGE_EMAIL_ADDRESS">CHANGE_EMAIL_ADDRESS</a></p> <!-- CHANGE_EMAIL_ADDRESS -->
+                        <p class="info-note">Réponse sous 24h</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="info-icon">💬</div>
+                    <div class="info-details">
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/CHANGE_WHATSAPP_NUMBER" target="_blank">CHANGE_WHATSAPP_NUMBER</a></p> <!-- CHANGE_WHATSAPP_NUMBER (format: 212612345678) -->
+                        <p class="info-note">Chat en direct</p>
+                    </div>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="contact-social">
+                    <h3>Suivez-nous</h3>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/miyabi.perfumes" target="_blank" class="social-btn">
+                            <span>📷</span> Instagram
+                        </a> <!-- CHANGE_INSTAGRAM_URL -->
+                        <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank" class="social-btn">
+                            <span>🎵</span> TikTok
+                        </a> <!-- CHANGE_TIKTOK_URL -->
+                        <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank" class="social-btn">
+                            <span>📘</span> Facebook
+                        </a> <!-- CHANGE_FACEBOOK_URL -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contactForm" class="contact-form" onsubmit="handleContactSubmit(event)">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Prénom <span class="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Nom <span class="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Téléphone</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Sujet <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Sélectionnez un sujet</option>
+                            <option value="question">Question générale</option>
+                            <option value="order">Question sur une commande</option>
+                            <option value="product">Question sur un produit</option>
+                            <option value="delivery">Livraison</option>
+                            <option value="return">Retour / Échange</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message <span class="required">*</span></label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            <span>Je souhaite recevoir les offres et actualités par email</span>
+                        </label>
+                    </div>
+
+                    <button type="submit" class="submit-btn">Envoyer le message</button>
+
+                    <p class="form-note">Les champs marqués d'un <span class="required">*</span> sont obligatoires</p>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Message envoyé avec succès!</h3>
+                    <p>Nous vous répondrons dans les plus brefs délais.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section (Optional) -->
+    <section class="faq-section">
+        <div class="faq-container">
+            <h2 class="section-title">Questions Fréquentes</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Quels sont vos délais de livraison?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>CHANGE_DELIVERY_TIME_ANSWER</p> <!-- CHANGE_DELIVERY_TIME_ANSWER -->
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Puis-je retourner un produit?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>CHANGE_RETURN_POLICY_ANSWER</p> <!-- CHANGE_RETURN_POLICY_ANSWER -->
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Quels modes de paiement acceptez-vous?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>CHANGE_PAYMENT_METHODS_ANSWER</p> <!-- CHANGE_PAYMENT_METHODS_ANSWER -->
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    <h3>Comment puis-je suivre ma commande?</h3>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p>CHANGE_ORDER_TRACKING_ANSWER</p> <!-- CHANGE_ORDER_TRACKING_ANSWER -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a>
+                <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank">TikTok</a>
+            </div>
+            
+            <div class="payment-methods">
+                <p>Moyens de paiement</p>
+                <div class="payment-icons">
+                    <span>💳</span> <!-- CHANGE: Add actual payment method icons -->
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026, <a href="index.html">MIYABI</a></p> <!-- CHANGE_BRAND_NAME -->
+                <p>By <a href="CHANGE_DEVELOPER_URL">DAISHI</a></p> <!-- CHANGE_DEVELOPER_URL and CHANGE_DEVELOPER_NAME -->
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Politique de confidentialité</a>
+                <a href="refund.html">Politique de remboursement</a>
+                <a href="terms.html">Conditions d'utilisation</a>
+                <a href="shipping.html">Politique d'expédition</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre panier</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Votre panier est vide</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total estimé</span>
+                <span id="cartTotal">0.00 dh</span>
+            </div>
+            <button class="checkout-btn" onclick="goToCheckout()">Procéder au paiement</button>
+            <a href="catalog.html" class="continue-shopping">Continuer les achats</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="contact-script.js"></script>
+</body>
+</html>

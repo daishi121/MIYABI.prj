@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produit - MIYABI</title> <!-- CHANGE_BRAND_NAME -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        LIVRAISON GRATUITE +300 DH <!-- CHANGE_FREE_SHIPPING_AMOUNT -->
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MIYABI</a> <!-- CHANGE_BRAND_NAME -->
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Cart Icon -->
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-symbol">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a>
+                <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb">
+        <a href="index.html">Accueil</a>
+        <span>/</span>
+        <a href="catalog.html">Catalogue</a>
+        <span>/</span>
+        <span id="breadcrumbProduct">Produit</span>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail">
+        <div class="product-detail-container">
+            <!-- Product Gallery -->
+            <div class="product-gallery">
+                <div class="main-image" id="mainImageContainer">
+                    <img id="mainImage" src="" alt="Product Image">
+                </div>
+                <div class="thumbnail-images" id="thumbnailImages">
+                    <!-- Thumbnails will be loaded by JS -->
+                </div>
+            </div>
+
+            <!-- Product Information -->
+            <div class="product-info-detail">
+                <p class="product-brand-detail" id="productBrand">MIYABI</p> <!-- CHANGE_BRAND_NAME -->
+                <h1 class="product-title-detail" id="productTitle">Chargement...</h1>
+                
+                <div class="product-rating">
+                    <div class="stars">
+                        ★★★★★
+                    </div>
+                    <span class="reviews-count">( 100 REVIEWS )</span> <!-- CHANGE_REVIEWS_COUNT -->
+                </div>
+
+                <div class="product-price-detail">
+                    <span class="current-price" id="productPrice">50.00 dh</span>
+                    <span class="original-price" id="originalPrice" style="display: none;">70.00 dh</span>
+                    <span class="discount-badge" id="discountBadge" style="display: none;">-14%</span>
+                </div>
+
+                <div class="product-description" id="productDescription">
+                    <p>description...</p>
+                </div>
+
+                <!-- Product Options -->
+                <div class="product-options">
+                    <!-- Size/Volume Options -->
+                    <div class="option-group">
+                        <label>Volume:</label>
+                        <div class="size-options" id="sizeOptions">
+                            <!-- Will be loaded by JS if applicable -->
+                            <button class="size-btn active" data-size="10ml">30 ML</button>
+                            <button class="size-btn" data-size="50ml">50 ML</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quantity Selector -->
+                <div class="quantity-section">
+                    <label>Quantité:</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty('productQty')">-</button>
+                        <input type="number" id="productQty" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty('productQty')">+</button>
+                    </div>
+                </div>
+
+                <!-- Stock Status -->
+                <div class="stock-status" id="stockStatus">
+                    <span class="in-stock">✓ En stock</span>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <button class="add-to-cart-btn-detail" id="addToCartBtn" onclick="addToCartFromDetail()">
+                    Ajouter au panier
+                </button>
+
+                <!-- Additional Info -->
+                <div class="product-meta">
+                    <div class="meta-item">
+                        <strong>SKU:</strong>
+                        <span id="productSku">-</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>Catégorie:</strong>
+                        <span id="productCategory">-</span>
+                    </div>
+                </div>
+
+                <!-- Shipping Info -->
+                <div class="shipping-info">
+                    <div class="shipping-item">
+                        <span class="icon">🚚</span>
+                        <span>Livraison gratuite à partir de 300 DH</span> <!-- CHANGE_FREE_SHIPPING_THRESHOLD -->
+                    </div>
+                    <div class="shipping-item">
+                        <span class="icon">📦</span>
+                        <span>Livraison en 24 heures à Casablanca / 2 jours hors de Casablanca </span> <!-- CHANGE_DELIVERY_TIME -->
+                    </div>
+                    <div class="shipping-item">
+                        <span class="icon">🔄</span>
+                        <span>Retour gratuit sous 14 jours</span> <!-- CHANGE_RETURN_PERIOD -->
+                    </div>
+                </div>
+
+                <!-- Social Share -->
+                <div class="social-share">
+                    <p>Partager:</p>
+                    <div class="share-buttons">
+                        <button onclick="shareProduct('facebook')" class="share-btn">Facebook</button>
+                        <button onclick="shareProduct('whatsapp')" class="share-btn">WhatsApp</button>
+                        <button onclick="shareProduct('copy')" class="share-btn">Copier le lien</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Details Tabs -->
+    <section class="product-tabs">
+        <div class="tabs-container">
+            <div class="tab-buttons">
+                <button class="tab-btn active" onclick="switchTab('description')">Description</button>
+                <button class="tab-btn" onclick="switchTab('ingredients')">Composition</button>
+                <button class="tab-btn" onclick="switchTab('shipping')">Livraison</button>
+                <button class="tab-btn" onclick="switchTab('reviews')">Avis</button>
+            </div>
+
+            <div class="tab-content">
+                <!-- Description Tab -->
+                <div class="tab-panel active" id="descriptionTab">
+                    <h3>Description détaillée</h3>
+                    <div id="fullDescription">
+                        <p>DESCRIPTION</p> <!-- CHANGE_FULL_PRODUCT_DESCRIPTION -->
+                    </div>
+                </div>
+
+                <!-- Ingredients Tab -->
+                <div class="tab-panel" id="ingredientsTab">
+                    <h3>Notes de parfum</h3>
+                    <div class="notes-section">
+                        <div class="note-item">
+                            <h4>Notes de Tête</h4>
+                            <p id="topNotes">TOP NOTES</p> <!-- CHANGE_TOP_NOTES -->
+                        </div>
+                        <div class="note-item">
+                            <h4>Notes de Cœur</h4>
+                            <p id="heartNotes">HEART NOTES</p> <!-- CHANGE_HEART_NOTES -->
+                        </div>
+                        <div class="note-item">
+                            <h4>Notes de Fond</h4>
+                            <p id="baseNotes">BASE NOTES</p> <!-- CHANGE_BASE_NOTES -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shipping Tab -->
+                <div class="tab-panel" id="shippingTab">
+                    <h3>Informations de livraison</h3>
+                    <p>SHIPPING INFO</p> <!-- CHANGE_SHIPPING_INFO -->
+                    <ul>
+                        <li>Livraison en 24 heures à Casablanca / 2 jours hors de Casablanca </li> <!-- CHANGE_STANDARD_DELIVERY -->
+                        <li>Livraison gratuite à partir de 300 DH</li> <!-- CHANGE_FREE_SHIPPING_MIN -->
+                        <li>Suivi de commande disponible</li>
+                    </ul>
+                </div>
+
+                <!-- Reviews Tab -->
+                <div class="tab-panel" id="reviewsTab">
+                    <h3>Avis clients</h3>
+                    <div class="reviews-container" id="reviewsContainer">
+                        <!-- Reviews will be loaded by JS -->
+                        <p>Aucun avis pour le moment. Soyez le premier à donner votre avis!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Related Products -->
+    <section class="related-products">
+        <h2 class="section-title">Produits similaires</h2>
+        <div class="products-grid" id="relatedProductsGrid">
+            <!-- Related products will be loaded by JS -->
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a> <!-- CHANGE_TIKTOK_URL -->
+                <a href="https://www.tiktok.com/@miyabi.perfumes" target="_blank">TikTok</a>
+            </div>
+            
+            <div class="payment-methods">
+                <p>Moyens de paiement</p>
+                <div class="payment-icons">
+                    <span>💳</span> <!-- CHANGE: Add actual payment method icons -->
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026, <a href="index.html">MIYABI</a></p> <!-- CHANGE_BRAND_NAME -->
+                <p>By <a href="CHANGE_DEVELOPER_URL">DAISHI</a></p> <!-- CHANGE_DEVELOPER_URL and CHANGE_DEVELOPER_NAME -->
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Politique de confidentialité</a>
+                <a href="refund.html">Politique de remboursement</a>
+                <a href="terms.html">Conditions d'utilisation</a>
+                <a href="shipping.html">Politique d'expédition</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre panier</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Votre panier est vide</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total estimé</span>
+                <span id="cartTotal">0.00 dh</span>
+            </div>
+            <button class="checkout-btn" onclick="goToCheckout()">Procéder au paiement</button>
+            <a href="catalog.html" class="continue-shopping">Continuer les achats</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="product-detail-script.js"></script>
+</body>
+</html>

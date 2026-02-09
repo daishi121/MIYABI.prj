@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIYABI FRAGRANCE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        LIVRAISON GRATUITE +300 DH <!-- CHANGE_FREE_SHIPPING_AMOUNT -->
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                ☰
+            </button>
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">MIYABI</a> <!-- CHANGE_BRAND_NAME -->
+            </div>
+
+            <!-- Desktop Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <!-- Cart Icon -->
+            <div class="cart-icon" onclick="toggleCart()">
+                <span class="cart-symbol">🛒</span>
+                <span class="cart-count" id="cartCount">0</span>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="catalog.html">Catalogue</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a>
+                <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank">TikTok</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="image/heropic.png" alt="MIYABI"> <!-- CHANGE_HERO_IMAGE -->
+        </div>
+    </section>
+
+    <!-- Collections Section -->
+    <section class="collections">
+        <h2 class="section-title">Collections</h2>
+        <div class="collections-grid">
+            <!-- Collection 1 -->
+            <div class="collection-card">
+                <a href="catalog.html?category=Parfums masculins"> <!-- CHANGE_CATEGORY_3 -->
+                    <div class="collection-image">
+                        <img src="image/men/1.png" alt="Parfums masculins"> <!-- CHANGE_COLLECTION_IMAGE_3 and CHANGE_COLLECTION_NAME_3 -->
+                    </div>
+                    <h3 class="collection-name">Parfums masculins</h3> <!-- CHANGE_COLLECTION_NAME_3 -->
+                </a>
+            </div>
+
+            <!-- Collection 2 -->
+            <div class="collection-card">
+                <a href="catalog.html?category=Parfums féminins"> <!-- CHANGE_CATEGORY_2 -->
+                    <div class="collection-image">
+                        <img src="image/women/1.png" alt="Parfums féminins"> <!-- CHANGE_COLLECTION_IMAGE_2 and CHANGE_COLLECTION_NAME_2 -->
+                    </div>
+                    <h3 class="collection-name">Parfums féminins</h3> <!-- CHANGE_COLLECTION_NAME_2 -->
+                </a>
+            </div>
+
+            <!-- Collection 3 -->
+            <div class="collection-card">
+                <a href="catalog.html?category=Parfums unisexes"> <!-- CHANGE_CATEGORY_1 -->
+                    <div class="collection-image">
+                        <img src="image/both/1.png" alt="Parfums unisexes"> <!-- CHANGE_COLLECTION_IMAGE_1 and CHANGE_COLLECTION_NAME_1 -->
+                    </div>
+                    <h3 class="collection-name">Parfums unisexes</h3> <!-- CHANGE_COLLECTION_NAME_1 -->
+                </a>
+            </div>
+
+            <!-- Collection 4 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_4">
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_4.jpg" alt="CHANGE_COLLECTION_NAME_4">
+                    </div>
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_4</h3>
+                </a>
+            </div> -->
+
+            <!-- Collection 5 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_5"> 
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_5.jpg" alt="CHANGE_COLLECTION_NAME_5">
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_5</h3>
+                </a>
+            </div> -->
+
+            <!-- Collection 6 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_6">
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_6.jpg" alt="CHANGE_COLLECTION_NAME_6">
+                    </div>
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_6</h3>
+                </a>
+            </div> -->
+
+             <!-- Collection 7 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_7">
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_7.jpg" alt="CHANGE_COLLECTION_NAME_7"> 
+                    </div>
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_7</h3>
+                </a>
+            </div> -->
+
+             <!-- Collection 8 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_8">
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_8.jpg" alt="CHANGE_COLLECTION_NAME_8">
+                    </div>
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_8</h3>
+                </a>
+            </div> -->
+
+             <!-- Collection 9 -->
+            <!-- <div class="collection-card">
+                <a href="catalog.html?category=CHANGE_CATEGORY_9">
+                    <div class="collection-image">
+                        <img src="CHANGE_COLLECTION_IMAGE_9.jpg" alt="CHANGE_COLLECTION_NAME_9"> 
+                    </div>
+                    <h3 class="collection-name">CHANGE_COLLECTION_NAME_9</h3>
+            </div>
+        </div> -->
+    </section>
+
+    <!-- Featured Products Section - SINGLE SECTION for all products -->
+<section class="featured-products">
+    <h2 class="section-title">Produits en Vedette</h2>
+    <div class="featured-products-container">
+        <!-- Product 1 -->
+        <div class="featured-product-card">
+            <div class="product-image-large">
+                <img src="/image/featur/1.png" alt="featur-1">
+                <div class="image-overlay">
+                    <a href="product-detail.html?id=featur-1" class="overlay-view-details">Afficher détails</a>
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="product-brand">MIYABI</p>
+                <h2 class="product-title">CDIOR : HYPNOTIC POISON</h2>
+                <p class="product-price">
+                    <span class="price-amount">50</span> dh
+                </p>
+                <p class="product-shipping">Frais d'expédition calculés à l'étape de paiement.</p>
+                <div class="product-quantity">
+                    <label>Quantité</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty('qty1')">-</button>
+                        <input type="number" id="qty1" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty('qty1')">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('featur-1')">Ajouter au panier</button>
+                <a href="product-detail.html?id=featur-1" class="view-details">Afficher tous les détails</a>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="featured-product-card">
+            <div class="product-image-large">
+                <img src="/image/featur/2.png" alt="featur-2">
+                <div class="image-overlay">
+                    <a href="product-detail.html?id=featur-2" class="overlay-view-details">Afficher détails</a>
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="product-brand">MIYABI</p>
+                <h2 class="product-title">GUCCI : FLORA GORGEOUS GARDENIA</h2>
+                <p class="product-price">
+                    <span class="price-amount">50</span> dh
+                </p>
+                <p class="product-shipping">Frais d'expédition calculés à l'étape de paiement.</p>
+                <div class="product-quantity">
+                    <label>Quantité</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty('qty2')">-</button>
+                        <input type="number" id="qty2" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty('qty2')">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('featur-2')">Ajouter au panier</button>
+                <a href="product-detail.html?id=featur-2" class="view-details">Afficher tous les détails</a>
+            </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="featured-product-card">
+            <div class="product-image-large">
+                <img src="/image/featur/3.png" alt="featur-3">
+                <div class="image-overlay">
+                    <a href="product-detail.html?id=featur-3" class="overlay-view-details">Afficher détails</a>
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="product-brand">MIYABI</p>
+                <h2 class="product-title">BVLGARI : MAN WOOD ESSENCE</h2>
+                <p class="product-price">
+                    <span class="price-amount">60</span> dh
+                </p>
+                <p class="product-shipping">Frais d'expédition calculés à l'étape de paiement.</p>
+                <div class="product-quantity">
+                    <label>Quantité</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty('qty3')">-</button>
+                        <input type="number" id="qty3" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty('qty3')">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('featur-3')">Ajouter au panier</button>
+                <a href="product-detail.html?id=featur-3" class="view-details">Afficher tous les détails</a>
+            </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="featured-product-card">
+            <div class="product-image-large">
+                <img src="/image/featur/4.png" alt="featur-4">
+                <div class="image-overlay">
+                    <a href="product-detail.html?id=featur-4" class="overlay-view-details">Afficher détails</a>
+                </div>
+            </div>
+            <div class="product-details">
+                <p class="product-brand">MIYABI</p>
+                <h2 class="product-title">JEAN PAUL GAULTIER : LE MALE</h2>
+                <p class="product-price">
+                    <span class="price-amount">70</span> dh
+                </p>
+                <p class="product-shipping">Frais d'expédition calculés à l'étape de paiement.</p>
+                <div class="product-quantity">
+                    <label>Quantité</label>
+                    <div class="quantity-selector">
+                        <button class="qty-btn" onclick="decreaseQty('qty4')">-</button>
+                        <input type="number" id="qty4" value="1" min="1">
+                        <button class="qty-btn" onclick="increaseQty('qty4')">+</button>
+                    </div>
+                </div>
+                <button class="add-to-cart-btn" onclick="addToCart('featur-4')">Ajouter au panier</button>
+                <a href="product-detail.html?id=featur-4" class="view-details">Afficher tous les détails</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/miyabi.perfumes/" target="_blank">Instagram</a> <!-- CHANGE_INSTAGRAM_URL -->
+                <a href="https://www.facebook.com/profile.php?id=61583221468941" target="_blank">facebook</a>
+                <a href="https://www.tiktok.com/@miyabiparfums?_r=1&_t=ZS-93e64JP6mQ4" target="_blank">TikTok</a> <!-- CHANGE_TIKTOK_URL -->
+            </div>
+            
+            <div class="payment-methods">
+                <p>Moyens de paiement</p>
+                <div class="payment-icons">
+                    <span>💳</span> <!-- CHANGE: Add actual payment method icons -->
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026, <a href="index.html">MIYABI</a></p> <!-- CHANGE_BRAND_NAME -->
+                <p>By <a href="CHANGE_DEVELOPER_URL">DAISHI</a></p> <!-- CHANGE_DEVELOPER_URL and CHANGE_DEVELOPER_NAME -->
+            </div>
+
+            <div class="footer-links">
+                <a href="privacy.html">Politique de confidentialité</a>
+                <a href="refund.html">Politique de remboursement</a>
+                <a href="terms.html">Conditions d'utilisation</a>
+                <a href="shipping.html">Politique d'expédition</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Votre panier</h3>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="empty-cart">Votre panier est vide</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total estimé</span>
+                <span id="cartTotal">0.00 dh</span>
+            </div>
+            <button class="checkout-btn" onclick="goToCheckout()">Procéder au paiement</button>
+            <a href="catalog.html" class="continue-shopping">Continuer les achats</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
