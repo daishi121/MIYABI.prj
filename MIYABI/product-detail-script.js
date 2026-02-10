@@ -11,9 +11,7 @@ const detailedProducts = {
         discount50ml: 15,
         images: [
             '/image/men/1.png',
-            '/image/men/1.png',
-            '/image/men/1.png',
-        ],
+            ],
         category: 'Parfums masculins',
         sku: 'PRF-001',
         inStock: true,
@@ -1814,6 +1812,7 @@ function loadProductDetails(productId) {
     
     if (!product) return;
     
+    
     // Set default values (30ml)
     selectedSize = '30ml';
     selectedPrice = product.price;
@@ -1827,9 +1826,19 @@ function loadProductDetails(productId) {
     document.getElementById('breadcrumbProduct').textContent = product.name;
     
     // Update product info
+        // Update product info
     document.getElementById('productTitle').textContent = product.name;
     document.getElementById('productCategory').textContent = product.category;
     document.getElementById('productSku').textContent = product.id.toUpperCase();
+    
+    // === ADD THIS CODE RIGHT HERE ===
+    // UPDATE DESCRIPTION AND NOTES
+    document.getElementById('productDescription').innerHTML = `<p>${product.description}</p>`;
+    document.getElementById('fullDescription').innerHTML = `<p>${detailedProducts[product.id].fullDescription}</p>`;   
+    document.getElementById('topNotes').textContent = product.topNotes || 'Non spécifié';
+    document.getElementById('heartNotes').textContent = product.heartNotes || 'Non spécifié';
+    document.getElementById('baseNotes').textContent = product.baseNotes || 'Non spécifié';
+    // === END OF ADDED CODE ===
     
     // Update price (30ml by default)
     updatePriceDisplay();
