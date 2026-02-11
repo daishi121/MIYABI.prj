@@ -9,7 +9,7 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/1.png',
             ],
         category: 'Parfums masculins',
@@ -32,9 +32,7 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
-            '/image/men/2.png',
-            '/image/men/2.png',
+        image: [
             '/image/men/2.png',
         ],
         category: 'Parfums masculins',
@@ -57,9 +55,7 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
-            '/image/men/3.png',
-            '/image/men/3.png',
+        image: [
             '/image/men/3.png',
         ],
         category: 'Parfums masculins',
@@ -82,9 +78,7 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
-            '/image/men/4.png',
-            '/image/men/4.png',
+        image: [
             '/image/men/4.png',
         ],
         category: 'Parfums masculins',
@@ -107,10 +101,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/5.png',
-            '/image/men/5.png',
-            '/image/men/5.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-005',
@@ -132,10 +124,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/6.png',
-            '/image/men/6.png',
-            '/image/men/6.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-006',
@@ -157,10 +147,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/7.png',
-            '/image/men/7.png',
-            '/image/men/7.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-007',
@@ -182,10 +170,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/8.png',
-            '/image/men/8.png',
-            '/image/men/8.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-008',
@@ -207,10 +193,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/9.png',
-            '/image/men/9.png',
-            '/image/men/9.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-009',
@@ -232,10 +216,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/10.png',
-            '/image/men/10.png',
-            '/image/men/10.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-010',
@@ -257,10 +239,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/11.png',
-            '/image/men/11.png',
-            '/image/men/11.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-011',
@@ -282,10 +262,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/12.png',
-            '/image/men/12.png',
-            '/image/men/12.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-012',
@@ -307,10 +285,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/13.png',
-            '/image/men/13.png',
-            '/image/men/13.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-013',
@@ -332,10 +308,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/14.png',
-            '/image/men/14.png',
-            '/image/men/14.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-014',
@@ -357,10 +331,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/15.png',
-            '/image/men/15.png',
-            '/image/men/15.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-015',
@@ -382,10 +354,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/16.png',
-            '/image/men/16.png',
-            '/image/men/16.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-016',
@@ -407,10 +377,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/17.png',
-            '/image/men/17.png',
-            '/image/men/17.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-017',
@@ -432,10 +400,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/18.png',
-            '/image/men/18.png',
-            '/image/men/18.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-018',
@@ -457,10 +423,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/19.png',
-            '/image/men/19.png',
-            '/image/men/19.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-019',
@@ -482,10 +446,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/20.png',
-            '/image/men/20.png',
-            '/image/men/20.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-020',
@@ -507,10 +469,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/21.png',
-            '/image/men/21.png',
-            '/image/men/21.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-021',
@@ -532,10 +492,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/22.png',
-            '/image/men/22.png',
-            '/image/men/22.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-022',
@@ -557,10 +515,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/23.png',
-            '/image/men/23.png',
-            '/image/men/23.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-023',
@@ -582,10 +538,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/24.png',
-            '/image/men/24.png',
-            '/image/men/24.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-024',
@@ -607,10 +561,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/25.png',
-            '/image/men/25.png',
-            '/image/men/25.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-025',
@@ -632,10 +584,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/26.png',
-            '/image/men/26.png',
-            '/image/men/26.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-026',
@@ -657,10 +607,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/men/27.png',
-            '/image/men/27.png',
-            '/image/men/27.png'
         ],
         category: 'Parfums masculins',
         sku: 'PRF-027',
@@ -682,10 +630,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/1.png',
-            '/image/women/1.png',
-            '/image/women/1.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-028',
@@ -707,10 +653,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/2.png',
-            '/image/women/2.png',
-            '/image/women/2.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-029',
@@ -732,10 +676,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/3.png',
-            '/image/women/3.png',
-            '/image/women/3.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-030',
@@ -757,9 +699,7 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
-            '/image/women/4.png',
-            '/image/women/4.png',
+        image: [
             '/image/women/4.png'
         ],
         category: 'Parfums féminins',
@@ -782,10 +722,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/5.png',
-            '/image/women/5.png',
-            '/image/women/5.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-032',
@@ -807,10 +745,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/6.png',
-            '/image/women/6.png',
-            '/image/women/6.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-033',
@@ -832,10 +768,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/7.png',
-            '/image/women/7.png',
-            '/image/women/7.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-034',
@@ -857,10 +791,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/8.png',
-            '/image/women/8.png',
-            '/image/women/8.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-035',
@@ -882,10 +814,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/9.png',
-            '/image/women/9.png',
-            '/image/women/9.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-036',
@@ -907,10 +837,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/10.png',
-            '/image/women/10.png',
-            '/image/women/10.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-037',
@@ -932,10 +860,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/11.png',
-            '/image/women/11.png',
-            '/image/women/11.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-038',
@@ -957,10 +883,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/12.png',
-            '/image/women/12.png',
-            '/image/women/12.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-039',
@@ -982,10 +906,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/13.png',
-            '/image/women/13.png',
-            '/image/women/13.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-040',
@@ -1007,10 +929,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/14.png',
-            '/image/women/14.png',
-            '/image/women/14.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-041',
@@ -1032,10 +952,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/15.png',
-            '/image/women/15.png',
-            '/image/women/15.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-042',
@@ -1057,10 +975,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/16.png',
-            '/image/women/16.png',
-            '/image/women/16.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-043',
@@ -1082,10 +998,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/17.png',
-            '/image/women/17.png',
-            '/image/women/17.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-044',
@@ -1107,10 +1021,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/18.png',
-            '/image/women/18.png',
-            '/image/women/18.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-045',
@@ -1132,10 +1044,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/19.png',
-            '/image/women/19.png',
-            '/image/women/19.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-046',
@@ -1157,10 +1067,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/20.png',
-            '/image/women/20.png',
-            '/image/women/20.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-047',
@@ -1182,10 +1090,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/21.png',
-            '/image/women/21.png',
-            '/image/women/21.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-048',
@@ -1207,10 +1113,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/22.png',
-            '/image/women/22.png',
-            '/image/women/22.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-049',
@@ -1232,10 +1136,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/23.png',
-            '/image/women/23.png',
-            '/image/women/23.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-050',
@@ -1257,10 +1159,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/24.png',
-            '/image/women/24.png',
-            '/image/women/24.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-051',
@@ -1282,10 +1182,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/25.png',
-            '/image/women/25.png',
-            '/image/women/25.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-052',
@@ -1307,10 +1205,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/26.png',
-            '/image/women/26.png',
-            '/image/women/26.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-053',
@@ -1332,10 +1228,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/women/27.png',
-            '/image/women/27.png',
-            '/image/women/27.png'
         ],
         category: 'Parfums féminins',
         sku: 'PRF-054',
@@ -1357,10 +1251,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/1.png',
-            '/image/both/1.png',
-            '/image/both/1.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-055',
@@ -1382,10 +1274,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/2.png',
-            '/image/both/2.png',
-            '/image/both/2.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-056',
@@ -1407,10 +1297,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/3.png',
-            '/image/both/3.png',
-            '/image/both/3.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-057',
@@ -1432,10 +1320,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/4.png',
-            '/image/both/4.png',
-            '/image/both/4.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-058',
@@ -1457,10 +1343,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/5.png',
-            '/image/both/5.png',
-            '/image/both/5.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-059',
@@ -1482,10 +1366,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/6.png',
-            '/image/both/6.png',
-            '/image/both/6.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-060',
@@ -1507,10 +1389,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/7.png',
-            '/image/both/7.png',
-            '/image/both/7.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-061',
@@ -1532,10 +1412,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/8.png',
-            '/image/both/8.png',
-            '/image/both/8.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-062',
@@ -1557,10 +1435,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/9.png',
-            '/image/both/9.png',
-            '/image/both/9.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-063',
@@ -1582,10 +1458,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/10.png',
-            '/image/both/10.png',
-            '/image/both/10.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-064',
@@ -1607,10 +1481,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/11.png',
-            '/image/both/11.png',
-            '/image/both/11.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-065',
@@ -1632,10 +1504,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/12.png',
-            '/image/both/12.png',
-            '/image/both/12.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-066',
@@ -1657,10 +1527,8 @@ const detailedProducts = {
         price50ml: 85.00,
         originalPrice50ml: 100.00,
         discount50ml: 15,
-        images: [
+        image: [
             '/image/both/13.png',
-            '/image/both/13.png',
-            '/image/both/13.png'
         ],
         category: 'Parfums unisexes',
         sku: 'PRF-067',
@@ -1683,7 +1551,7 @@ const detailedProducts = {
     price50ml: null,
     originalPrice50ml: null,
     discount50ml: null,
-    images: [
+    image: [
         '/image/featur/1.png'
     ],
     category: 'Parfums',
@@ -1708,7 +1576,7 @@ const detailedProducts = {
     price50ml: null,
     originalPrice50ml: null,
     discount50ml: null,
-    images: [
+    image: [
         '/image/featur/2.png'
     ],
     category: 'Parfums',
@@ -1733,7 +1601,7 @@ const detailedProducts = {
     price50ml: null,
     originalPrice50ml: null,
     discount50ml: null,
-    images: [
+    image: [
         '/image/featur/3.png'
     ],
     category: 'Parfums masculins',
@@ -1758,7 +1626,7 @@ const detailedProducts = {
     price50ml: null,
     originalPrice50ml: null,
     discount50ml: null,
-    images: [
+    image: [
         '/image/featur/4.png'
     ],
     category: 'Parfums masculins',
@@ -1775,6 +1643,8 @@ const detailedProducts = {
 
     // CHANGE: Add all your products here with complete details
 };
+
+Object.assign(products, detailedProducts);
 
 // Current product being viewed
 // PRODUCT DETAIL SCRIPT - With Dynamic Size/Price Switching
@@ -1828,7 +1698,7 @@ function loadProductDetails(productId) {
     // Update product info
         // Update product info
     document.getElementById('productTitle').textContent = product.name;
-    document.getElementById('productCategory').textContent = product.category;
+    document.getElementById('productCategory').textContent = product.category; 
     document.getElementById('productSku').textContent = product.id.toUpperCase();
     
     // === ADD THIS CODE RIGHT HERE ===
