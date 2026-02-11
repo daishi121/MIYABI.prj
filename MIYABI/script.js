@@ -877,7 +877,8 @@ const products = { //this is the men porfums
         image: '/image/both/13.png',
         category: 'Parfums unisexes',
         featured: false
-    },    'featur-1': {
+    },
+    'featur-1': {
         id: 'featur-1',
         name: 'CDIOR : HYPNOTIC POISON',
         price: 50.00,
@@ -975,18 +976,15 @@ function decreaseQty(inputId) {
 
 // Add to Cart
 function addToCart(productId) {
-    // Get product from database
     const product = products[productId];
-    
     if (!product) {
         console.error('Product not found:', productId);
         return;
     }
-    
-    // Get quantity from input (look for qty inputs with various IDs)
+
+    // Quantity
     let quantity = 1;
     const qtyInputs = ['qty1', 'qty2', 'productQty'];
-    
     for (let qtyId of qtyInputs) {
         const qtyInput = document.getElementById(qtyId);
         if (qtyInput) {
@@ -994,46 +992,44 @@ function addToCart(productId) {
             break;
         }
     }
-    
-    // Check if product already exists in cart
-    const existingItemIndex = cart.findIndex(item => item.id === productId);
-    
+
+    // Size (MUST be explicit)
+    const sizeInput = document.querySelector('input[name="size"]:checked');
+    const selectedSize = sizeInput ? sizeInput.value : '30ml';
+
+    // Find existing cart item (id + size)
+    const existingItemIndex = cart.findIndex(
+        item => item.id === productId && item.size === selectedSize
+    );
+
     if (existingItemIndex > -1) {
-        // Update quantity if product exists
         cart[existingItemIndex].quantity += quantity;
     } else {
-        // Add new product to cart
         cart.push({
             id: product.id,
+            size: selectedSize,
             name: product.name,
-            price: product.price,
+            price: selectedSize === '50ml' ? product.price50ml : product.price,
             image: product.image,
             quantity: quantity
         });
     }
-    
-    // Save cart to localStorage
+
     saveCart();
-    
-    // Update cart display
     updateCartDisplay();
     updateCartCount();
-    
-    // Show cart sidebar
-    const cartSidebar = document.getElementById('cartSidebar');
-    cartSidebar.classList.add('active');
-    
-    // Optional: Show notification
-    showNotification('Produit ajouté au panier');
 }
 
 // Remove from Cart
-function removeFromCart(productId) {
-    cart = cart.filter(item => item.id !== productId);
+function removeFromCart(productId, size) {
+    cart = cart.filter(
+        item => !(item.id === productId && item.size === size)
+    );
     saveCart();
     updateCartDisplay();
     updateCartCount();
 }
+
 
 // Update Cart Count
 function updateCartCount() {
@@ -1064,16 +1060,18 @@ function updateCartDisplay() {
                     <img src="${item.image}" alt="${item.name}">
                 </div>
                 <div class="cart-item-details">
-                    <div class="cart-item-name">${item.name}</div>
-                    <div class="cart-item-price">${item.price.toFixed(2)} dh</div>
-                    <div class="quantity-controls">
-                        <button class="qty-btn" onclick="updateQuantity('${item.id}', -1)">−</button>
-                        <span class="qty-display">${item.quantity}</span>
-                        <button class="qty-btn" onclick="updateQuantity('${item.id}', 1)">+</button>
+                    <div class="cart-item-name">${item.name} (${item.size})
                     </div>
+                    <div class="quantity-controls">
+                        <button class="qty-btn" onclick="updateQuantity('${item.id}', '${item.size}', -1)">−</button>
+                             <span class="qty-display">${item.quantity}</span>
+                         <button class="qty-btn" onclick="updateQuantity('${item.id}', '${item.size}', 1)">+</button>
+                    </div>
+                    <div class="cart-item-price">${item.price.toFixed(2)} dh</div>
+                    
                     <div class="item-total">${itemTotal.toFixed(2)} dh</div>
                 </div>
-                <button class="delete-btn" onclick="removeFromCart('${item.id}')">🗑️</button>
+                <button class="delete-btn" onclick="removeFromCart('${item.id}','${item.size}')">🗑️</button>
             </div>
         `;
     });
@@ -1081,21 +1079,24 @@ function updateCartDisplay() {
     cartItemsContainer.innerHTML = cartHTML;
     cartTotal.textContent = total.toFixed(2) + ' dh';
 }
-function updateQuantity(productId, change) {
-    const itemIndex = cart.findIndex(item => item.id === productId);
-    
+function updateQuantity(productId, size, change) {
+    const itemIndex = cart.findIndex(
+        item => item.id === productId && item.size === size
+    );
+
     if (itemIndex > -1) {
         cart[itemIndex].quantity += change;
-        
+
         if (cart[itemIndex].quantity <= 0) {
             cart.splice(itemIndex, 1);
         }
-        
+
         saveCart();
         updateCartDisplay();
         updateCartCount();
     }
 }
+
 
 // Show Notification
 function showNotification(message) {
@@ -1360,7 +1361,7 @@ function populateCheckoutItems(cart) {
                     <img src="${item.image}" alt="${item.name}">
                 </div>
                 <div class="checkout-item-details">
-                    <div class="checkout-item-name">${item.name}</div>
+                    <div class="checkout-item-name">${item.name} (${item.size})</div>
                     <div class="checkout-item-quantity">Quantité: ${item.quantity}</div>
                 </div>
                 <div class="checkout-item-price">${itemTotal.toFixed(2)} dh</div>
@@ -1443,7 +1444,7 @@ function completeOrder() {
     cart.forEach((item, index) => {
         const itemTotal = item.price * item.quantity;
         subtotal += itemTotal;
-        message += `${index + 1}. ${item.name}\n`;
+        message += `${index + 1}. ${item.name} (${item.size})\n`;
         message += `   Quantité: ${item.quantity}\n`;
         message += `   Prix: ${itemTotal.toFixed(2)} dh\n\n`;
     });
@@ -1482,7 +1483,7 @@ function sendAbandonedCartMessage() {
     cart.forEach((item, index) => {
         const itemTotal = item.price * item.quantity;
         subtotal += itemTotal;
-        message += `${index + 1}. ${item.name}\n`;
+        message += `${index + 1}. ${item.name} (${item.size})\n`;
         message += `   Quantité: ${item.quantity}\n`;
         message += `   Prix: ${itemTotal.toFixed(2)} dh\n\n`;
     });
